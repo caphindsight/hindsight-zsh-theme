@@ -5,6 +5,8 @@ else
     local usr_prefix="%{$fg[cyan]%}"
 fi
 
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 PROMPT='${ret_status}${usr_prefix}%~>%{$reset_color%} '
 
 RPROMPT='$(git_prompt_info)'
