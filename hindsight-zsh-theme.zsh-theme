@@ -1,4 +1,4 @@
-local ret_status="%(?::%{$fg_bold[yellow]%}[=$?]%{$reset_color%} )"
+local ret_status="%(?::%{$fg_bold[yellow]%}[=%?]%{$reset_color%} )"
 if [ "$UID" -eq 0 ]; then
     local usr_prefix="%{$fg[red]%}"
 else
